@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        // let x = myFunction(4, 3);
+        // document.getElementById("demo").innerHTML = x;
+        // function myFunction(a, b) {
+        //     return a * b;
+        // }
+
+
+        // const obj = document.getElementById("demo");
+        // obj.innerHTML = " Hello";
+
+
+        // let name = new Map([
+        //     ["apple", 400],
+        //     ["banana", 200],
+        //     ["orange", 300]
+        // ]);
+        // document.getElementById("demo").innerHTML = name.get("banana");
+        // document.getElementById("demo").innerHTML = name.get("apple");
+        // document.getElementById("demo").innerHTML = name.has("eeee");
+        // name.delete("apple");
+        // name.clear();
+        // document.getElementById("demo").innerHTML = name.size;
+        // document.getElementById("demo").innerHTML = typeof name;
+        // document.getElementById("demo").innerHTML = name instanceof Map;
+
+
+        let person = {
+            firstName: "Sandeep",
+            lastName: "Kumar",
+            id: 333,
+            fullName: function () {
+                return (this.firstName + " " + this.lastName + " " + this.id).toLowerCase();
+            }
+        };
+        document.getElementById("demo").innerHTML = person.fullName();
+        document.getElementById("demo").innerHTML = "My name is " + person.fullName();
+
+    </script>
+</body>
+
+</html>
